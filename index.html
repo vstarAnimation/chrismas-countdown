@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger">menu</span>
+            <a href="#" class="logo"><h2>logo</h2></a>
+            <ul class="link">
+                <span class="close-btn rounded">close</span>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">blog</a></li>
+            </ul>
+            <button class="login-btn">login</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn rounded">x</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>welcome</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam consequatur voluptas, quae laudantium ex, tenetur quia, exercitationem sed mollitia maiores libero ad! Dolor, nam? Similique laborum asperiores optio suscipit.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="">
+                    <div class="input-field email">
+                        <input type="text" id="email">
+                        <label for="email">email</label>
+                        <div class="error error-txt">email can't be empty</div>
+                    </div>
+                    <div class="input-field password">
+                        <input type="password" id="password">
+                        <label for="password">password</label>
+                        <i class="bi bi-eye icon" id="password-icon"></i>
+                        <div class="error error-txt">password can't be empty</div>
+                    </div>
+                    <button class="log-btn">Log In</button>
+                    <a href="forgot.php" class="forgot">forgot password</a>
+                </form>
+                
+                <div class="button-link">dont have an account? <a href="" id="signup-link">sign up</a></div>
+
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>create account</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed veniam ad nihil in, cum minima dolorum, placeat totam quasi sunt harum necessitatibus adipisci minus laboriosam. At quo sequi iusto placeat.</p>
+            </div>
+            <div class="form-content">
+                <h2>sign up</h2>
+                <form action="">
+                    <div class="input-field">
+                        <input type="text">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password">
+                        <label for="password">create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">i argree to the <a href="term&condition.html"> term & condition</a></label>
+                    </div>
+                </form>
+                
+                <button>sign up</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
